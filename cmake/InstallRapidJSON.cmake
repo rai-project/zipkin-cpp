@@ -8,7 +8,7 @@ if (NOT RAPIDJSON_FOUND OR USE_BUNDLED_RAPIDJSON)
         DOWNLOAD_NAME   RapidJSON-${RAPIDJSON_VERSION}.tar.gz
         URL             https://github.com/miloyip/rapidjson/archive/v${RAPIDJSON_VERSION}.tar.gz
         URL_MD5         ${RAPIDJSON_URL_MD5}
-        CMAKE_ARGS      -DCMAKE_INSTALL_PREFIX=<INSTALL_DIR>
+        CMAKE_ARGS      -DCMAKE_INSTALL_PREFIX=<INSTALL_DIR> -DRAPIDJSON_BUILD_EXAMPLES=OFF
         TEST_COMMAND    ""
     )
 
